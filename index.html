@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>We make it happen!</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles/initialize.min.css">
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      font-family: 'Open Sans', sans-serif;
+    }
+    b {
+      font-weight: 700;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header img{
+      width: 100%;
+      height: auto;
+    }
+
+    .header-desktop{
+      display: none;
+    }
+    .header-mobile{
+      display: block;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 100;
+      color: #D75EFF;
+      margin: 32px 0;
+      line-height: 34px;
+    }
+    .content {
+      flex: 1;
+      width: 100%;
+    }
+    .content .block {
+      width: 50%;
+      min-height: 50%;
+      float: left;
+      text-align: center;
+      color: #4900AC;
+    }
+    .content .block > p {
+      color: #D75EFF;
+      font-size: 36px;
+    line-height: 36px;
+      font-weight: 100;
+    }
+    .content a {
+      text-decoration: none;
+      color: #4900AC;  
+      display: inline-block;    
+    }
+
+    .content a > p {
+      line-height: 18px;
+    }
+    .content .circle {
+      border-radius: 50%;
+      border: 2px solid #4900AC; 
+      height: 140px;
+      width: 140px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .content .circle img {
+      width: 56%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .content .brand {
+      overflow: hidden;
+      position: relative;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      margin: -30px auto 0 auto;
+      background: #40bcec;
+    }
+
+    .content .brand img {
+      width: 100%;
+    }
+    @media(min-width: 850px) {
+      .content {
+        display: flex;
+        align-items: center;
+      }
+      .content .block {
+        width: 25%;
+      }
+      .header-mobile{
+        display: none;
+      }
+      .header-desktop{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="./images/header-desktop.jpg" class="header-desktop" alt="">
+      <img src="./images/header-mobile.jpg" class="header-mobile" alt="">
+    </header>
+    <h1>WELCOME ON BOARD!</h1>
+    <div class="content">
+      <div class="block">
+        <a href="https://bewi.net/wmih2018" target="_blank" title="Bewi">
+          <div class="circle">
+              <img src="./images/bewi_icon.svg" alt="">
+            </div>
+            <div class="brand">
+              <img src="./images/bewi_logo.png" alt="">
+            </div>
+          <p>
+            A question ? <br> A comment?<br> React live !
+          </p>
+        </a>
+      </div>
+      <div class="block">
+        <a href="https://app.tracktl.com/wmih2018" target="_blank" title="TRACKTL">
+          <div class="circle">
+            <img src="./images/tracktl_icon.svg" alt="">
+          </div>
+          <div class="brand">
+            <img src="./images/tracktl_logo.png" alt="">
+          </div>
+          <p>
+            Tonight you're <br>the DJ, <b>choose <br>your music !</b>
+          </p>
+        </a>
+      </div>
+      <div class="block">
+        <a href="https://younity.groupeadeo.com" target="_blank" title="Younity">
+          <div class="circle">
+              <img src="./images/younity_icon.svg" alt="">
+            </div>
+            <div class="brand">
+              <img src="./images/younity_logo.png" alt="">
+            </div>
+          <p>
+            Share the good <br>times with <b>your <br>community</b>
+          </p>
+        </a>
+      </div>
+      <div class="block">
+        <p>
+          HAVE <br> A GREAT <br> DAY!
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
